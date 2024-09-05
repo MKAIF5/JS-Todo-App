@@ -7,10 +7,25 @@ form.addEventListener("submit", (event) => {
 
     // console.log(input.value);
 
-    const li = document.createElement("li");
-    ul.appendChild(li);
-    li.className = "li"
-    li.innerHTML = input.value
+    if (input.value === "") {
+        Swal.fire({
+            title: 'Oops',
+            text: 'Please Add Your Text',
+            icon: 'error',
+        })
+    }
+    else {
+        const li = document.createElement("li");
+        ul.appendChild(li);
+        li.className = "li"
+        li.innerHTML = input.value
+        const span = document.createElement("span");
+        span.className = "span"
+        span.innerHTML = "\u00d7"
+        li.appendChild(span)
 
+
+
+    }
     form.reset()
 })

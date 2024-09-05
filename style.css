@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    margin-top: 15%;
+}
+
+.main{
+    background-color: white;
+    padding: 2rem;
+    width: 35rem;
+    min-height: auto;
+    border-radius: 2rem;
+}
+
+.container{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+h1{
+    font-size: 2rem;
+    font-family: sans-serif;
+}
+
+img{
+    width: 4rem;
+}
+
+.main-inp input{
+    padding: 5px;
+}

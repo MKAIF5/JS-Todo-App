@@ -24,7 +24,9 @@ form.addEventListener("submit", (event) => {
         span.innerHTML = "\u00d7"
         li.appendChild(span)
 
-
+        span.addEventListener("click" , () =>{
+          li.remove()
+        })
 
     }
     form.reset()
